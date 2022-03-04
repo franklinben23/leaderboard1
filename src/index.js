@@ -1,5 +1,4 @@
 import './style.css';
-// import {GetScores, MakeGame, addScore} from './APIdata';
 import APIdata from './APIdata.js';
 
 const Scores = document.querySelector('.scores-list');
@@ -14,7 +13,7 @@ const clearElement = (element) => {
 };
 
 const render = async (gameIndex) => {
-  // clearElement(Scores);
+  clearElement(Scores);
   Scores.innerHTML = '';
   const data = await APIdata.GetScores(gameIndex);
   data.result.forEach((element) => {
