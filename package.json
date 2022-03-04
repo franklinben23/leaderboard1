@@ -1,0 +1,30 @@
+{
+  "name": "leaderboard1",
+  "version": "1.0.0",
+  "description": "In this repository I will create an app that creates games and sends scores from an API to your browser.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "serve": "webpack serve",
+    "start": "webpack --config webpack.config.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/franklinben23/leaderboard1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/franklinben23/leaderboard1/issues"
+  },
+  "homepage": "https://github.com/franklinben23/leaderboard1#readme",
+  "dependencies": {
+    "webpack": "^5.70.0"
+  },
+  "devDependencies": {
+    "css-loader": "^6.7.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1"
+  }
+}
