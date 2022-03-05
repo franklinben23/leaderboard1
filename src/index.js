@@ -53,5 +53,4 @@ Form.addEventListener('submit', (e) => {
 
 refreshBtn.addEventListener('click', () => {
   render(gameIndex);
-  clearElement(Scores);
 });

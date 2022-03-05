@@ -1,7 +1,7 @@
 const ApiUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api';
 
-const MakeGame = () => {
-  fetch(
+const MakeGame = async () => {
+  await fetch(
     `${ApiUrl}games/`, {
       method: 'POST',
       body: JSON.stringify({
@@ -18,8 +18,8 @@ const MakeGame = () => {
     });
 };
 
-const addScore = (gameIndex, name, score) => {
-  fetch(
+const addScore = async (gameIndex, name, score) => {
+  await fetch(
     `${ApiUrl}/games/${gameIndex}/scores`,
     {
       method: 'POST',
@@ -35,6 +35,6 @@ const addScore = (gameIndex, name, score) => {
     .then((response) => response.json());
 };
 
-const GetScores = (gameIndex) => fetch(`${ApiUrl}/games/${gameIndex}/scores`).then((response) => response.json());
+const GetScores = async (gameIndex) => fetch(`${ApiUrl}/games/${gameIndex}/scores`).then((response) => response.json());
 
 export default { MakeGame, addScore, GetScores };
