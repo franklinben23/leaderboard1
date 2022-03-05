@@ -5,3 +5,77 @@
   font-size: 100%;
   vertical-align: baseline;
 }
+
+body {
+  margin: auto;
+  width: 1200px;
+  text-align: center;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 40px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-left: 210px;
+}
+
+h4 {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 20px;
+}
+
+.leaderboard-cont {
+  width: 400px;
+}
+
+.title-btn-cont {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.scores-list {
+  text-align: justify;
+  list-style: none;
+  border: black 3px solid;
+}
+
+.scores-list li {
+  border: black 1px solid;
+  padding-left: 10px;
+}
+
+.scores-list li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.form-cont {
+  max-width: 250px;
+  margin-left: 150px;
+}
+
+.btnn {
+  background-color: white;
+  width: 65px;
+  border: black 3px solid;
+  box-shadow: 4px 2px 2px black;
+}
+
+.inputt {
+  padding: 5px 0 5px 0;
+  margin-top: 3px;
+  border: black 3px solid;
+}
+
+.input-btn {
+  margin-top: 5px;
+  margin-left: 150px;
+}
